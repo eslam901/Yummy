@@ -20,7 +20,6 @@ export class Ingredients {
     document.querySelectorAll(".ingredient").forEach((ingredient) => {
       ingredient.addEventListener("click", () => {
         let api = `https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingredient.dataset.ingredient}`;
-        console.log(api);
         document.querySelector(".loading").classList.remove("d-none");
         this.sendApi(api);
       });
@@ -28,7 +27,6 @@ export class Ingredients {
   }
   async sendApi(api) {
     let arry = await this.data.gitData(api);
-    console.log(arry);
     let showBox = this.box.dataBox(arry);
     this.data.showData(showBox);
   }
