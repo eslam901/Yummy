@@ -12,6 +12,8 @@ export class Home {
     this.data = new Data();
     this.box = new Box();
     document.querySelector(".loading").classList.remove("d-none");
+      document.getElementById("instructions").classList.add("d-none");
+      document.getElementById("homePage").classList.remove("d-none");
     let arry = await this.data.gitData(api);
     let showBox = this.box.dataBox(arry);
     this.data.showData(showBox);

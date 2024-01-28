@@ -4,6 +4,8 @@ export class Contact {
   }
   contact() {
     document.getElementById("contact").addEventListener("click", () => {
+      document.getElementById("instructions").classList.add("d-none");
+      document.getElementById("homePage").classList.remove("d-none");
       let contactBox = `
       <div class="col-12 vh-100 row align-items-center justify-content-center">
         <div class="col-12 row gx-4">

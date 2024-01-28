@@ -9,6 +9,8 @@ export class Search {
   }
   search() {
     document.getElementById("sreach").addEventListener("click", () => {
+      document.getElementById("instructions").classList.add("d-none");
+      document.getElementById("homePage").classList.remove("d-none");
       let searchBox = `
         <div class="col-6">
           <div>
