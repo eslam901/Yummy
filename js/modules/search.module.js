@@ -22,7 +22,7 @@ export class Search {
         </div>
         <div class="col-12 position-relative">
           <div id="result" class="row g-4"></div>
-          <div class="load">
+          <div class="load d-none">
             <span class="loader"></span>
           </div>
         </div>
@@ -49,10 +49,12 @@ export class Search {
     let search = document.getElementById("searchLetter");
     search.addEventListener("input", async () => {
       let searchValue = search.value;
-      let api = `https://www.themealdb.com/api/json/v1/1/search.php?f=${searchValue}`;
-      document.querySelector(".load").classList.remove("d-none");
-      let result = await this.data.gitData(api);
-      this.showResult(this.box.dataBox(result));
+      if (searchValue) {
+        let api = `https://www.themealdb.com/api/json/v1/1/search.php?f=${searchValue}`;
+        document.querySelector(".load").classList.remove("d-none");
+        let result = await this.data.gitData(api);
+        this.showResult(this.box.dataBox(result));
+      }
     });
   }
   showResult(box) {

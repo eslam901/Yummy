@@ -15,5 +15,11 @@ export class Home {
     let arry = await this.data.gitData(api);
     let showBox = this.box.dataBox(arry);
     this.data.showData(showBox);
+    this.home();
+  }
+  home() {
+    document.getElementById("home").addEventListener("click", () => {
+      this.defultData();
+    });
   }
 }
