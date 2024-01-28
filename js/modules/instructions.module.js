@@ -106,7 +106,7 @@ export class Instructions {
       </div>
     `;
     document.querySelector(".btnClose").addEventListener("click", function () {
-      document.getElementById("home").classList.remove("d-none");
+      document.getElementById("homePage").classList.remove("d-none");
       document.getElementById("instructions").classList.add("d-none");
     });
     document.getElementById("instructions").classList.remove("d-none");

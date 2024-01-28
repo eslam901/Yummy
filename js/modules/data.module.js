@@ -29,7 +29,7 @@ export class Data {
   showDetails() {
     document.querySelectorAll(".meal").forEach((meal) => {
       meal.addEventListener("click", () => {
-        document.getElementById("home").classList.add("d-none");
+        document.getElementById("homePage").classList.add("d-none");
         let id = meal.dataset.id;
         this.sendId(id);
       });
