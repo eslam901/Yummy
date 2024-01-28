@@ -1,5 +1,3 @@
-/// <reference types="../../@types/jquery" />
-
 import { Nav } from "./nav.module.js";
 import { Data } from "./data.module.js";
 import { Box } from "./box.module.js";

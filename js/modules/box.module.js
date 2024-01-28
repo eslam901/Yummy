@@ -1,4 +1,5 @@
 import { Data } from "./data.module.js";
+
 export class Box {
   constructor() {
     this.data = new Data();

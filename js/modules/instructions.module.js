@@ -1,4 +1,5 @@
 import { Data } from "./data.module.js";
+
 export class Instructions {
   constructor(id) {
     this.getDetails(id);

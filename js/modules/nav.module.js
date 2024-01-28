@@ -1,4 +1,5 @@
 /// <reference types="../../@types/jquery" />
+
 import { Search } from "./search.module.js";
 import { Categories } from "./categories.module.js";
 import { Area } from "./area.module.js";
