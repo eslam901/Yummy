@@ -21,7 +21,7 @@ export class Nav {
       $("#nav").animate({ left: "0" }, 500);
       $(".close").show();
 
-      for (let i = 0; i < 5; i++) {
+      for (let i = 0; i < 6; i++) {
         $(".links li")
           .eq(i)
           .animate(
