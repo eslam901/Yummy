@@ -29,7 +29,8 @@ export class Ingredients {
     });
   }
   async sendApi(api) {
-    let arry = await this.data.gitData(api);
+    let arrymore = await this.data.gitData(api);
+    let arry = arrymore.slice(0, 20);
     let showBox = this.box.dataBox(arry);
     this.data.showData(showBox);
   }
